@@ -6,9 +6,8 @@
 
 |     멤버             |  담당               |
 |:--- | ---: |  
-| [신지민](https://github.com/JJIMINSHIN)
-             |   팀장            |
-| 김현균             |   PM            |
-| 박현서             |   어플구현            |
-| 유다빈             |   디자인            |
+| [신지민](https://github.com/JJIMINSHIN)| 팀장 |
+| [김현균](https://github.com/Ksanbal)             |   PM            |
+| [박현서](https://github.com/hyena0608)               |   어플구현            |
+| [유다빈](https://github.com/ydb9607)               |   디자인            |
 

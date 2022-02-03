@@ -1,5 +1,5 @@
 ﻿# 38_초록초록
-
+An environmental application where you can pick up trash while walking on the street and check the location of the trash cans around you.
 
 ## 역할
 

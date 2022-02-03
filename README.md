@@ -3,7 +3,7 @@ An environmental application where you can pick up trash while walking on the st
 
 
 
-## 역할
+# 역할
 
 
 |     멤버             |  담당               |

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -13,7 +15,10 @@ class EndView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    _ploggingProvider = Provider.of<PloggingProvider>(context);
+    PloggingProvider _ploggingProvider =
+        Provider.of<PloggingProvider>(context, listen: false);
+    Duration _walkTime =
+        Duration(seconds: _ploggingProvider.plogging.walkTime);
 
     // return Scaffold(
     //   body: Center(
@@ -38,7 +43,7 @@ class EndView extends StatelessWidget {
               children: [
                 Image.asset('assets/images/step_2.png', height: 40, width: 40),
                 Text(
-                  '걸음수 10,000',
+                  '걸음수 ${_ploggingProvider.plogging.walkCount}',
                   style: TextStyle(fontSize: 37),
                 )
               ],
@@ -51,8 +56,8 @@ class EndView extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset('assets/images/watch_2.png', height: 40, width: 40),
-                const Text(
-                  '시간 15:20:12',
+                Text(
+                  "시간 ${_walkTime.inHours}:${_walkTime.inMinutes.remainder(60)}:${_walkTime.inSeconds.remainder(60)}",
                   style: TextStyle(fontSize: 38),
                 )
               ],
@@ -87,27 +92,27 @@ class EndView extends StatelessWidget {
               //  POINT: BoxDecoration
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  Text("플라스틱 ",
-                      style:
-                          TextStyle(fontSize: 14.0, color: Color(0xff707070))),
-                  Text("종이 ",
-                      style: TextStyle(
+                children: [
+                  Text("플라스틱 ${_ploggingProvider.plogging.plasticCount}",
+                      style: const TextStyle(
+                          fontSize: 14.0, color: Color(0xff707070))),
+                  Text("종이 ${_ploggingProvider.plogging.paperCount}",
+                      style: const TextStyle(
                           fontSize: 14.0,
                           height: 1.3,
                           color: Color(0xff707070))),
-                  Text("일반쓰레기 ",
-                      style: TextStyle(
+                  Text("일반쓰레기 ${_ploggingProvider.plogging.wasteCount}",
+                      style: const TextStyle(
                           fontSize: 14.0,
                           height: 1.3,
                           color: Color(0xff707070))),
-                  Text("페트병 ",
-                      style: TextStyle(
+                  Text("페트병 ${_ploggingProvider.plogging.bottleCount}",
+                      style: const TextStyle(
                           fontSize: 14.0,
                           height: 1.3,
                           color: Color(0xff707070))),
-                  Text("유리 ",
-                      style: TextStyle(
+                  Text("유리 ${_ploggingProvider.plogging.glassCount}",
+                      style: const TextStyle(
                           fontSize: 14.0,
                           height: 1.3,
                           color: Color(0xff707070))),
@@ -128,7 +133,10 @@ class EndView extends StatelessWidget {
                 borderRadius: BorderRadius.circular(3),
               ),
               //  POINT: BoxDecoration
-              child: const Text("text", style: TextStyle(fontSize: 14.0)),
+              // child: const Text("text", style: TextStyle(fontSize: 14.0)),
+              child: (_ploggingProvider.image != null)
+                  ? Image.file(File(_ploggingProvider.image!.path))
+                  : const Text("사진이 없어요ㅠ", style: TextStyle(fontSize: 14.0)),
             ),
           ]),
         ],

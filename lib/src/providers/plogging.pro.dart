@@ -176,6 +176,6 @@ class PloggingProvider extends ChangeNotifier {
   }
 
   getPhoto() async {
-    await _photoRepository.getPhoto();
+    _image = await _photoRepository.getPhoto();
   }
 }

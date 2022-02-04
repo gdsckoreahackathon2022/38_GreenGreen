@@ -1,17 +1,17 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:greengreen/src/repository/permission.rep.dart';
+import 'package:greengreen/src/colors.dart';
+import 'package:greengreen/src/providers/plogging.pro.dart';
+import 'package:greengreen/src/repository/photo.rep.dart';
 import 'package:flutter/material.dart';
+import 'package:greengreen/src/views/ing/ing.view.dart';
+import 'package:provider/provider.dart';
 
 class StartView extends StatelessWidget {
   const StartView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // 위치권한 요청
-    final PermissionRepository _permissionRepository = PermissionRepository();
-    _permissionRepository.requestLocationPermission();
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -21,7 +21,13 @@ class StartView extends StatelessWidget {
           width: 50,
           height: 50,
         ),
-        title: Text("줍깅줍깅", style: TextStyle(color: Colors.green)),
+        title: Text(
+          "줍깅줍깅",
+          style: TextStyle(
+            color: Colors.green,
+            fontSize: 25,
+          ),
+        ),
       ),
       body: Column(
         children: <Widget>[
@@ -38,11 +44,17 @@ class StartView extends StatelessWidget {
                 // 이중선
                 DottedBorder(
                   borderType: BorderType.Oval,
-                  // radius: Radius.circular(1000),
+                  dashPattern: const [2.5, 5],
+                  strokeWidth: 2,
+                  color: greenColor,
                   padding: EdgeInsets.all(15),
-
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => IngView()),
+                      );
+                    },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(1000),
                       child: Container(

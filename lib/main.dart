@@ -6,7 +6,12 @@ import 'package:greengreen/src/views/start/start.view.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [ChangeNotifierProvider(create: (_) => PloggingProvider())],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -21,10 +26,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         fontFamily: "AppleSDGothicNeo",
       ),
-      home: ChangeNotifierProvider<PloggingProvider>(
-        create: (context) => PloggingProvider(),
-        child: EndView(),
-      ),
+      home: const StartView(),
+      // home: IngView(),
+      // home: EndView(),
     );
   }
 }

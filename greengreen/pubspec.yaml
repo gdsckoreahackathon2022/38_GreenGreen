@@ -11,6 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_maps_flutter: ^2.0.4
+  geolocator: ^5.3.1
+  flutter_polyline_points: ^0.2.1
 
   cupertino_icons: ^1.0.2
   provider: ^6.0.2
@@ -25,10 +28,15 @@ flutter:
   uses-material-design: true
 
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - assets/images/icon.png
-  #   - assets/images/background.png
+  # To add asset to your application, add an asset section, like this:
+  assets:
+    - asset/images/Logo.png
+    - asset/images/my_location.png
+    - asset/images/step1.png
+    - asset/images/step2.png
+    - asset/images/trash.png
+    - asset/images/watch1.png
+    - asset/images/watch2.png
 
   # fonts:
   #   - family: Schyler

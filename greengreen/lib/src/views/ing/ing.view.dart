@@ -22,7 +22,7 @@ class _IngViewState extends State<IngView> {
   void initState() {
     super.initState();
     _ploggingProvider = Provider.of<PloggingProvider>(context, listen: false);
-    // _ploggingProvider.startPlogging();
+    _ploggingProvider.startPlogging();
   }
 
   @override
@@ -144,28 +144,34 @@ class _IngViewState extends State<IngView> {
                     height: 1,
                   ),
                   // 버튼
-                  SizedBox(
-                    height: buttonRowHeight,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        CircleButton(
-                          icon: Icons.play_arrow_rounded,
-                          method: _ploggingProvider.startPlogging,
-                        ),
-                        const SizedBox(width: 18),
-                        CircleButton(
-                          icon: Icons.pause_rounded,
-                          method: _ploggingProvider.pausePlogging,
-                        ),
-                        const SizedBox(width: 18),
-                        CircleButton(
-                          icon: Icons.stop_rounded,
-                          method: _ploggingProvider.pausePlogging,
-                        ),
-                      ],
-                    ),
-                  ),
+                  Consumer<PloggingProvider>(
+                      builder: (context, porvider, child) {
+                    return SizedBox(
+                      height: buttonRowHeight,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleButton(
+                            icon: Icons.play_arrow_rounded,
+                            method: porvider.startPlogging,
+                            isActive: porvider.walkingStatus == 0,
+                          ),
+                          const SizedBox(width: 18),
+                          CircleButton(
+                            icon: Icons.pause_rounded,
+                            method: porvider.pausePlogging,
+                            isActive: porvider.walkingStatus == 1,
+                          ),
+                          const SizedBox(width: 18),
+                          CircleButton(
+                            icon: Icons.stop_rounded,
+                            method: porvider.stopPlogging,
+                            isActive: porvider.walkingStatus == 2,
+                          ),
+                        ],
+                      ),
+                    );
+                  }),
                 ],
               ),
             ),

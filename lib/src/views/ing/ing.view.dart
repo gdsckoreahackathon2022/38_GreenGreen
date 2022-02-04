@@ -28,7 +28,7 @@ class _IngViewState extends State<IngView> {
   @override
   Widget build(BuildContext context) {
     double halfScreenHeight = MediaQuery.of(context).size.height / 2;
-    double buttonRowHeight = 98.78;
+    double buttonRowHeight = 80;
 
     return Material(
       child: Stack(
@@ -98,7 +98,7 @@ class _IngViewState extends State<IngView> {
                       // 쓰레기 버튼들
                       Container(
                         height: halfScreenHeight - buttonRowHeight - 1,
-                        padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),
+                        padding: const EdgeInsets.fromLTRB(30, 20, 30, 20),
                         child: Consumer<PloggingProvider>(
                             builder: (context, provider, child) {
                           return Column(

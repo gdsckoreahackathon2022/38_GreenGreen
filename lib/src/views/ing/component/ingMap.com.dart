@@ -11,7 +11,7 @@ class MapComponent extends StatelessWidget {
 
   final CameraPosition _kGooglePlex = const CameraPosition(
     target: LatLng(37.556797, 126.923703),
-    zoom: 16.5,
+    zoom: 17,
   );
 
   @override
@@ -24,6 +24,7 @@ class MapComponent extends StatelessWidget {
         },
         zoomControlsEnabled: false,
         buildingsEnabled: false,
+        markers: provider.marker,
       );
     });
   }

@@ -14,6 +14,8 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   provider: ^6.0.2
+  google_maps_flutter: ^2.1.1
+  geolocator: ^8.1.0
 
 dev_dependencies:
   flutter_test:
@@ -26,13 +28,17 @@ flutter:
 
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - assets/images/icon.png
-  #   - assets/images/background.png
+  assets:
+    - assets/images/Logo.png
+    - assets/images/main image.png
+    - assets/images/my location.png
+    - assets/images/step 1.png
+    - assets/images/step 2.png
+    - assets/images/trash.png
+    - assets/images/watch 1.png
+    - assets/images/watch 2.png
 
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: AppleSDGothicNeo
+      fonts:
+        - asset: assets/fonts/AppleSDGothicNeoB.ttf

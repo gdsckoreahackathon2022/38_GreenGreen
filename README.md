@@ -32,3 +32,6 @@
 # 🔗 참고문서
 
   - https://flutter-ko.dev/docs 
+
+# 📌 초록초록 노션
+  [초록초록](https://www.notion.so/GDSC-2022-Winter-2a14b3c05c0842c0a41ccabaebae3e73)

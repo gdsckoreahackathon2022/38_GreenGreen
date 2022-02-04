@@ -13,32 +13,41 @@ class PloggingProvider extends ChangeNotifier {
   final PloggingModel _plogging = PloggingModel();
   GoogleMapController? _controller;
 
+  int _walkingStatus = 2;
+
   List<double> get myLocation => _myLocation ?? [37.556797, 126.923703];
   List<List<double>> get trashcanLocationList => _trashcanLocationList;
   List<List<double>> get takeTrashLocationList => _takeTrashLocationList;
   PloggingModel get plogging => _plogging;
   GoogleMapController get mapController => _controller!;
 
+  int get walkingStatus => _walkingStatus;
+
   final LocationRepository _locationRepository = LocationRepository();
 
   late Timer _timer;
   startPlogging() {
     // 플로깅 시작
-    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      _plogging.walkTime++;
-      notifyListeners();
-    });
+    if (_walkingStatus != 0) {
+      _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+        _plogging.walkTime++;
+        notifyListeners();
+      });
+    }
+    _walkingStatus = 0;
   }
 
   pausePlogging() {
     // 플로깅 일시중지
     _timer.cancel();
+    _walkingStatus = 1;
     notifyListeners();
   }
 
   stopPlogging() {
     // 플로깅 종료
     _timer.cancel();
+    _walkingStatus = 2;
     notifyListeners();
   }
 
@@ -78,7 +87,7 @@ class PloggingProvider extends ChangeNotifier {
     // 현재 위치 저장하기
     List<double> location = await _locationRepository.getCurrentLocation();
     _takeTrashLocationList.add(location);
-    print(_takeTrashLocationList);
+    notifyListeners();
   }
 
   resetMyLocation() async {

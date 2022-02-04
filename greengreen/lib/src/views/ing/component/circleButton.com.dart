@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:greengreen/src/colors.dart';
 
 class CircleButton extends StatelessWidget {
-  CircleButton({Key? key, required this.icon, required this.method})
+  CircleButton(
+      {Key? key,
+      required this.icon,
+      required this.method,
+      required this.isActive})
       : super(key: key);
 
   Function() method;
   IconData icon;
+  bool isActive;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +21,7 @@ class CircleButton extends StatelessWidget {
         width: 45,
         height: 45,
         decoration: BoxDecoration(
-          color: greenColor,
+          color: isActive ? greenColor : Colors.white,
           borderRadius: BorderRadius.circular(30),
           boxShadow: const [
             BoxShadow(
@@ -30,7 +35,7 @@ class CircleButton extends StatelessWidget {
         child: Icon(
           icon,
           size: 35,
-          color: Colors.white,
+          color: isActive ? Colors.white : greenColor,
         ),
       ),
     );

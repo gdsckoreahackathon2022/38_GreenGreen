@@ -6,7 +6,8 @@
  *같이 운동하면서 환경도 지켜볼래?*
   
 길을 걷다보면 길가에 무수히 많은 쓰레기들을 마주칠 수 있습니다. 초록초록은 길을 걸으면서 쓰레기를 줍고 주변 쓰레기통의 위치를 확인하여 처리할 수 있는 앱을 제작하여 길가의 쓰레기 근절과 코로나 시대로 인해 부족했던 운동을 실천함으로써 일상속의 건강한 지구 지킴이가 될 수 있습니다 😀
-  
+    <br>
+  <br>
 
 # 👨‍👨‍👧‍👧 역할
 
@@ -15,7 +16,25 @@
 | [신지민](https://github.com/JJIMINSHIN) |[dev.ksanbal](https://github.com/Ksanbal)| [박현서](https://github.com/hyena0608)|[유다빈](https://github.com/ydb9607)|
 | 담당 | 담당 | 담당 | 담당 |
 |- Leader <br> - 시작페이지 구현 <br>  |- Member <br> - Product Engineer <br> - 지도 API 담당 <br> - 경로 계산기 구현|- Member <br>- 지도 API 담당 <br>- 경로 계산기 구현	|- Member <br> - 기깔나는 디자인 담당|
-  
+<br>
+  <br>  
+
+# 🛠 개발환경
+
+  - Flutter
+  - Android Studio
+  - VsCode
+  - Notion
+  - github
+  - slack
+    <br>
+  <br>
+
+# 💻 언어
+  - Dart
+ 
+    <br>
+  <br>
   
 # 🌀 플루터 시작하기
   This project is a starting point for a Flutter application.
@@ -29,22 +48,14 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-# 🛠 개발환경
-
-  - Flutter
-  - Android Studio
-  - VsCode
-  - Notion
-  - github
-  - slack
-  
-# 💻 언어
-  - Dart
- 
  
 # 🔗 참고문서
 
   - https://flutter-ko.dev/docs 
+  - https://developers.google.com/maps/documentation/android-sdk/shapes?hl=ko
+  - https://ichi.pro/ko/flutter-google-jidoleul-sayonghayeo-gyeonglo-gyesangi-mandeulgi-124698433777593
+  <br>
+  <br>
 
 # 📌 초록초록 노션
   [초록초록](https://www.notion.so/GDSC-2022-Winter-2a14b3c05c0842c0a41ccabaebae3e73)

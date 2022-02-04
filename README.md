@@ -13,7 +13,7 @@
 
 |![신지민](https://user-images.githubusercontent.com/86641936/152567027-4759cf27-2a64-4159-a17e-2a7a8808248c.png)|![김현균](https://user-images.githubusercontent.com/86641936/152566954-9d4674a1-fd21-4b1b-9ef3-e3d4bd57947b.jpg)|![박현서](https://user-images.githubusercontent.com/86641936/152567037-0f33ec6a-b086-4986-807f-186786d2f0fe.jpg)|다빈님|
 |:---|:---|:---|:---|
-| [신지민](https://github.com/JJIMINSHIN) |[dev.ksanbal](https://github.com/Ksanbal)| [박현서](https://github.com/hyena0608)|[유다빈](https://github.com/ydb9607)|
+| [지민](https://github.com/JJIMINSHIN) |[dev.ksanbal](https://github.com/Ksanbal)| [현서](https://github.com/hyena0608)|[다빈](https://github.com/ydb9607)|
 | 담당 | 담당 | 담당 | 담당 |
 |- Leader <br> - 시작페이지 구현 <br>  |- Member <br> - Product Engineer <br> - 지도 API 담당 <br> - 경로 계산기 구현|- Member <br>- 지도 API 담당 <br>- 소셜 공유 구현|- Member <br> - 기깔나는 디자인 담당|
 <br>

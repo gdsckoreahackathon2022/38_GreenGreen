@@ -15,7 +15,7 @@
 |:---|:---|:---|:---|
 | [지민](https://github.com/JJIMINSHIN) |[dev.ksanbal](https://github.com/Ksanbal)| [현서](https://github.com/hyena0608)|[다빈](https://github.com/ydb9607)|
 | 담당 | 담당 | 담당 | 담당 |
-|- Leader <br> - 시작페이지 구현 <br>  |- Member <br> - Product Engineer <br> - 지도 API 담당 <br> - 경로 계산기 구현|- Member <br>- 지도 API 담당 <br>- 소셜 공유 구현|- Member <br> - 기깔나는 디자인 담당|
+|- Leader <br> - 시작페이지 구현 <br> -프로젝트 관리 |- Member <br> - Product Engineer <br> - 지도 API 담당 <br> - 경로 계산기 구현|- Member <br>- 지도 API 담당 <br>- 소셜 공유 구현|- Member <br> - 기깔나는 디자인 담당|
 <br>
   <br>  
 

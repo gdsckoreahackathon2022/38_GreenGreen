@@ -14,6 +14,7 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   provider: ^6.0.2
+  dotted_border: ^2.0.0+2
 
 dev_dependencies:
   flutter_test:
@@ -26,9 +27,19 @@ flutter:
 
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - assets/images/icon.png
-  #   - assets/images/background.png
+  assets:
+    - assets/images/Logo.png
+    - assets/images/main_image.png
+    - assets/images/my_location.png
+    - assets/images/step1.png
+    - assets/images/step2.png
+    - assets/images/trash.png
+    - assets/images/watch_1.png
+    - assets/images/watch_2.png
+    
+
+
+    
 
   # fonts:
   #   - family: Schyler

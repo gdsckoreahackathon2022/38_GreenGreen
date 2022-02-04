@@ -1,5 +1,8 @@
 import 'dart:async';
+import 'dart:typed_data';
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:greengreen/src/models/plogging.model.dart';
 import 'package:greengreen/src/repository/location.rep.dart';
@@ -22,6 +25,8 @@ class PloggingProvider extends ChangeNotifier {
 
   XFile? _image;
 
+  Set<Marker> _marker = {};
+
   List<double> get myLocation => _myLocation ?? [37.556797, 126.923703];
   List<List<double>> get takeTrashLocationList => _takeTrashLocationList;
   List<List<double>> get walkingPathList => _walkingPathList;
@@ -34,6 +39,8 @@ class PloggingProvider extends ChangeNotifier {
 
   XFile? get image => _image;
 
+  Set<Marker> get marker => _marker;
+
   final LocationRepository _locationRepository = LocationRepository();
   final PhotoRepository _photoRepository = PhotoRepository();
 
@@ -42,7 +49,7 @@ class PloggingProvider extends ChangeNotifier {
   initPlogging() async {
     // 첫 시작
     await resetMyLocation();
-    _mapRefresher = Timer.periodic(const Duration(seconds: 5), (timer) {
+    _mapRefresher = Timer.periodic(const Duration(seconds: 2), (timer) {
       resetMyLocation();
     });
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
@@ -130,11 +137,14 @@ class PloggingProvider extends ChangeNotifier {
     // 지도를 본인위치로 변경
     List<double> location = await _locationRepository.getCurrentLocation();
 
+    // 마커 찍기
+    getMaker(location[0], location[1]);
+
     _controller?.animateCamera(
       CameraUpdate.newCameraPosition(
         CameraPosition(
           target: LatLng(location[0], location[1]),
-          zoom: 16.5,
+          zoom: 17,
         ),
       ),
     );
@@ -177,5 +187,27 @@ class PloggingProvider extends ChangeNotifier {
 
   getPhoto() async {
     _image = await _photoRepository.getPhoto();
+  }
+
+  getMaker(double lat, long) async {
+    Future<Uint8List> getBytesFromAsset(String path, int width) async {
+      ByteData data = await rootBundle.load(path);
+      ui.Codec codec = await ui.instantiateImageCodec(data.buffer.asUint8List(),
+          targetWidth: width);
+      ui.FrameInfo fi = await codec.getNextFrame();
+      return (await fi.image.toByteData(format: ui.ImageByteFormat.png))!
+          .buffer
+          .asUint8List();
+    }
+
+    final Uint8List markerIcon =
+        await getBytesFromAsset('assets/images/my_location.png', 100);
+    Marker marker = Marker(
+      markerId: MarkerId('0'),
+      position: LatLng(lat, long),
+      icon: BitmapDescriptor.fromBytes(markerIcon),
+    );
+    _marker = {marker};
+    notifyListeners();
   }
 }

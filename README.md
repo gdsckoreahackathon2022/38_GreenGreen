@@ -31,12 +31,15 @@ samples, guidance on mobile development, and a full API reference.
 
 # 🛠 개발환경
 
-  - Dart
+  - Flutter
   - Android Studio
   - VsCode
   - Notion
   - github
   - slack
+  
+# 💻 언어
+  - Dart
  
  
 # 🔗 참고문서

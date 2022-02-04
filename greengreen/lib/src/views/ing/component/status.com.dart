@@ -32,7 +32,7 @@ class StatusComponent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset(
-                "assets/images/step 1.png",
+                "assets/images/step1.png",
                 width: 20,
               ),
               const SizedBox(width: 2),
@@ -49,7 +49,7 @@ class StatusComponent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset(
-                "assets/images/watch 1.png",
+                "assets/images/watch1.png",
                 width: 20,
               ),
               const SizedBox(width: 2),

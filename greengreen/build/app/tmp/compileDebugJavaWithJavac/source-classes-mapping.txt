@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/greengreen/greengreen/BuildConfig.java
+ com.greengreen.greengreen.BuildConfig

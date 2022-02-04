@@ -1,3 +1,4 @@
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:greengreen/src/repository/permission.rep.dart';
 import 'package:flutter/material.dart';
@@ -35,26 +36,54 @@ class StartView extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 // 이중선
+                DottedBorder(
+                  borderType: BorderType.Oval,
+                  // radius: Radius.circular(1000),
+                  padding: EdgeInsets.all(15),
 
-                // 스타트버튼
-                MaterialButton(
-                  onPressed: () {},
-                  color: Colors.green,
-                  textColor: Colors.white,
                   child: InkWell(
                     onTap: () {},
-                    child: Container(
-                      height: 300,
-                      width: 200,
-                      child: Center(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(1000),
+                      child: Container(
+                        height: 190,
+                        width: 190,
+                        color: Colors.green,
+                        child: Container(
                           child: Text(
-                        "Start",
-                        style: TextStyle(fontSize: 50),
-                      )),
+                            "Start",
+                            style: TextStyle(
+                              fontSize: 50,
+                              color: Colors.white,
+                              height: 3.0,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                  shape: CircleBorder(),
-                )
+                ),
+
+                // 스타트버튼
+                // MaterialButton(
+                //   onPressed: () {},
+                //   color: Colors.green,
+                //   textColor: Colors.white,
+                //   child: InkWell(
+                //     onTap: () {},
+                //     child: Container(
+                //       height: 300,
+                //       width: 200,
+                // child: Center(
+                //     child: Text(
+                //   "Start",
+                //   style: TextStyle(fontSize: 50),
+                // )),
+                //     ),
+                //   ),
+                //   shape: CircleBorder(),
+                // )
 
                 // InkWell(
                 //   onTap: () {},

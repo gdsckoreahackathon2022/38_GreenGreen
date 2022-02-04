@@ -62,7 +62,7 @@ Set<Marker> getMarkers(List<Position> positions) {
   // BitmapDescriptor myIcon;
   // Future<BitmapDescriptor> futureMyIcon;
 
-   setCustomMarker()  {
+  setCustomMarker() {
     return BitmapDescriptor.fromAssetImage(
         const ImageConfiguration(), 'asset/images/trash.png');
   }
@@ -76,9 +76,7 @@ Set<Marker> getMarkers(List<Position> positions) {
       results.add(marker);
     }
   });
-   return results;
-
-
+  return results;
 }
 
 /** 마커 사이 경로선 가져오기 메서드 */

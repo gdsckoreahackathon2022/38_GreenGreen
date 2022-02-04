@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:greengreen/src/providers/plogging.pro.dart';
 import 'package:greengreen/src/views/end/end.view.dart';
+import 'package:greengreen/src/views/ing/ing.view.dart';
 import 'package:greengreen/src/views/start/start.view.dart';
 import 'package:provider/provider.dart';
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Green Green',
       theme: ThemeData(
         primarySwatch: Colors.green,
+        fontFamily: "AppleSDGothicNeo",
       ),
       // home: const StartView(),
       home: ChangeNotifierProvider<PloggingProvider>(

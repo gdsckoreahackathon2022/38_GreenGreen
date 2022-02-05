@@ -20,12 +20,12 @@
   <br>  
 
 # 🎤 기능
-  |앱 시작|줍깅1|
+  |<p align = "center">앱 시작|<p align = "center">줍깅1|
   | :---| :---|
   |<img src="https://user-images.githubusercontent.com/86641936/152624794-f9b4ba2a-fa8b-4660-b3f2-e5a0ab33fb2c.gif" height="500" width="300" >|<img src="https://user-images.githubusercontent.com/86641936/152624799-ec5b600e-54ef-463d-8454-06e7b06158b6.gif" height="500" width="300" >|
-  |줍깅2|이제 그만|
+  |<p align = "center">줍깅2|<p align = "center">이제 그만|
   |<img src="https://user-images.githubusercontent.com/86641936/152624800-8dbb10e3-fcb2-40ef-86d5-e1e0cd9541a1.gif" height="500" width="300" >| <img src="https://user-images.githubusercontent.com/86641936/152625031-fb92e96e-cdd8-458b-8a78-a3ae1d24bce2.gif" height="500" width="300" >|
-  |인증샷|줍깅 끝|
+  |<p align = "center">인증샷|<p align = "center">줍깅 끝|
   |<img src="https://user-images.githubusercontent.com/86641936/152624809-ec23dc19-69e6-4433-92fc-20e03844af61.jpg" height="500" width="300" >| <img src="https://user-images.githubusercontent.com/86641936/152624811-392d52cb-0cde-4a44-b464-8523cc2a3fe2.gif" height="500" width="300" >|
 
 # 🛠 개발환경

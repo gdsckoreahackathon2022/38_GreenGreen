@@ -12,7 +12,6 @@
 # 👨‍👨‍👧‍👧 역할
 
 |![신지민](https://user-images.githubusercontent.com/86641936/152567027-4759cf27-2a64-4159-a17e-2a7a8808248c.png)|![김현균](https://user-images.githubusercontent.com/86641936/152566954-9d4674a1-fd21-4b1b-9ef3-e3d4bd57947b.jpg)|![박현서](https://user-images.githubusercontent.com/86641936/152567037-0f33ec6a-b086-4986-807f-186786d2f0fe.jpg)|![유다빈](https://user-images.githubusercontent.com/86641936/152624251-265161a8-48bc-4935-bd47-8d45809de2d0.jpg)|
-|
 |:---|:---|:---|:---|
 | [지민🐣](https://github.com/JJIMINSHIN) |[dev.ksanba🦝l](https://github.com/Ksanbal)| [현서🐲](https://github.com/hyena0608)|[다빈🐹](https://github.com/ydb9607)|
 | 담당 | 담당 | 담당 | 담당 |
@@ -23,14 +22,11 @@
 # 🎤 기능
   |앱 시작|줍깅1|
   | :---| :---|
-  |![1](https://user-images.githubusercontent.com/86641936/152624794-f9b4ba2a-fa8b-4660-b3f2-e5a0ab33fb2c.gif)|![2](https://user-images.githubusercontent.com/86641936/152624799-ec5b600e-54ef-463d-8454-06e7b06158b6.gif)|
+  |<img src="https://user-images.githubusercontent.com/86641936/152624794-f9b4ba2a-fa8b-4660-b3f2-e5a0ab33fb2c.gif" height="500" width="300" >|<img src="https://user-images.githubusercontent.com/86641936/152624799-ec5b600e-54ef-463d-8454-06e7b06158b6.gif" height="500" width="300" >|
   |줍깅2|이제 그만|
-  |![3](https://user-images.githubusercontent.com/86641936/152624800-8dbb10e3-fcb2-40ef-86d5-e1e0cd9541a1.gif)
-| https://user-images.githubusercontent.com/86641936/152624804-99548f68-4013-4db5-9875-ba4e74b140b8.mp4|
+  |<img src="https://user-images.githubusercontent.com/86641936/152624800-8dbb10e3-fcb2-40ef-86d5-e1e0cd9541a1.gif" height="500" width="300" >| <img src="https://user-images.githubusercontent.com/86641936/152625031-fb92e96e-cdd8-458b-8a78-a3ae1d24bce2.gif" height="500" width="300" >|
   |인증샷|줍깅 끝|
-  |![5](https://user-images.githubusercontent.com/86641936/152624809-ec23dc19-69e6-4433-92fc-20e03844af61.jpg)| ![6](https://user-images.githubusercontent.com/86641936/152624811-392d52cb-0cde-4a44-b464-8523cc2a3fe2.gif)|
-
-  
+  |<img src="https://user-images.githubusercontent.com/86641936/152624809-ec23dc19-69e6-4433-92fc-20e03844af61.jpg" height="500" width="300" >| <img src="(https://user-images.githubusercontent.com/86641936/152624811-392d52cb-0cde-4a44-b464-8523cc2a3fe2.gif" height="500" width="300" >|
 
 # 🛠 개발환경
 

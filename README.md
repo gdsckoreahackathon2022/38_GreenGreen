@@ -13,7 +13,7 @@
 
 |![신지민](https://user-images.githubusercontent.com/86641936/152567027-4759cf27-2a64-4159-a17e-2a7a8808248c.png)|![김현균](https://user-images.githubusercontent.com/86641936/152566954-9d4674a1-fd21-4b1b-9ef3-e3d4bd57947b.jpg)|![박현서](https://user-images.githubusercontent.com/86641936/152567037-0f33ec6a-b086-4986-807f-186786d2f0fe.jpg)|![유다빈](https://user-images.githubusercontent.com/86641936/152624251-265161a8-48bc-4935-bd47-8d45809de2d0.jpg)|
 |:---|:---|:---|:---|
-| [지민🐣](https://github.com/JJIMINSHIN) |[dev.ksanba🦝l](https://github.com/Ksanbal)| [현서🐲](https://github.com/hyena0608)|[다빈🐹](https://github.com/ydb9607)|
+| [지민🐣](https://github.com/JJIMINSHIN) |[dev.ksanbal🦝](https://github.com/Ksanbal)| [현서🐲](https://github.com/hyena0608)|[다빈🐹](https://github.com/ydb9607)|
 | 담당 | 담당 | 담당 | 담당 |
 |- Leader <br> - 시작페이지 구현 <br> - 프로젝트 관리 |- Member <br> - Product Engineer <br> - 지도 API 담당 <br> - 경로 계산기 구현|- Member <br>- 지도 API 담당 <br>- 소셜 공유 구현|- Member <br> - 기깔나는 디자인 담당|
 <br>
@@ -29,15 +29,8 @@
   |<img src="https://user-images.githubusercontent.com/86641936/152624809-ec23dc19-69e6-4433-92fc-20e03844af61.jpg" height="500" width="300" >| <img src="https://user-images.githubusercontent.com/86641936/152624811-392d52cb-0cde-4a44-b464-8523cc2a3fe2.gif" height="500" width="300" >|
 
 # 🛠 개발환경
-
-  - Flutter
-  - Android Studio
-  - VsCode
-  - Notion
-  - github
-  - slack
-    <br>
-  <br>
+![image](https://user-images.githubusercontent.com/86641936/152630894-3404a30a-deee-44e2-af82-36248b79ba12.png)
+<br><br>
 
 # 💻 언어
   - Dart

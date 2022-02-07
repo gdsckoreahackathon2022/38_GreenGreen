@@ -20,11 +20,8 @@
   <br>  
   
   
-# 📍 초록초록 시작하기 
-  ```
-  https://github.com/gdsckoreahackathon2022/38_GreenGreen/tree/main/apk
-  
-  ```
+# [ 🌳 초록초록 시작하기 ]( https://github.com/gdsckoreahackathon2022/38_GreenGreen/tree/main/apk)
+   
   <br><br>
 
 # 🎤 기능

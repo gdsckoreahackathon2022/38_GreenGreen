@@ -18,6 +18,14 @@
 |- Leader <br> - 시작페이지 구현 <br> - 프로젝트 관리 |- Member <br> - Product Engineer <br> - 지도 API 담당 <br> - 경로 계산기 구현|- Member <br>- 지도 API 담당 <br>- 소셜 공유 구현|- Member <br> - 기깔나는 디자인 담당|
 <br>
   <br>  
+  
+  
+# 📍 초록초록 시작하기 
+  ```
+  https://github.com/gdsckoreahackathon2022/38_GreenGreen/tree/main/apk
+  
+  ```
+  <br><br>
 
 # 🎤 기능
   |<p align = "center">앱 시작|<p align = "center">줍깅1| <p align = "center">줍깅2|
